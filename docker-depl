@@ -1,0 +1,11 @@
+FROM node:17-alpine3.14 AS appbuild
+WORKDIR /usr/src/app
+COPY package.json ./
+RUN npm install
+COPY ./src ./src
+RUN npm run build
+
+FROM nginx:1.21.5-alpine
+WORKDIR /usr/src/app
+COPY --from=appbuild /usr/src/app/public /usr/share/nginx/html/
+EXPOSE 80

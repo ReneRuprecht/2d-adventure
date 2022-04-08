@@ -1,0 +1,8 @@
+workspace.code-workspace
+node_modules
+.parcel-cache
+dist
+package-lock.json
+docker-compose.yml
+doku/dokumentation.synctex.gz
+.cache

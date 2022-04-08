@@ -1,0 +1,22 @@
+{
+  "name": "2d-adventure",
+  "version": "1.0.0",
+  "description": "Projekt-URL: https://gruppe-l.rm21.mylab.th-luebeck.de",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build ./src/index.html --out-dir ./public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.mylab.th-luebeck.de:rm/wise21/l-rene-ruprecht.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kaboom": "^2000.1.8"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
